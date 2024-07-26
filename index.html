@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="自家焙煎のコーヒーがお家で楽しめるorganic cafe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カフェ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <!--ロゴ-->
+  <a href="index.html" id="logo">
+    <img src="images/logo.png" alt="トップページに戻る"></a>
+  
+<!--pc 非表示-->
+  <nav id="nav-pc">
+    <ul>
+      <li><a href="index.html">CONCEPT</a></li>
+      <li><a href="index.html">PRODUCT</a></li>
+      <li><a href="index.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!--スマホ用メニュー開くボタン-->
+    <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+
+   <!--スマホ用メニュー閉じるボタン-->
+
+    <nav id="nav-sp">
+      <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+      
+    <ul>
+      <li><a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">
+        <img src="images/logo-sp.png" alt="トップページに戻る"></a></li>
+
+      <li><a class="menu" href="index.html#concept" onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT</a></li>
+      <li><a class="menu" href="index.html#product" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a></li>
+      <li><a class="menu" href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></li>
+    </ul>
+   </nav>
+</header>
+
+<main>
+  <article>
+    <section id="main-visual">
+      <div id="main-message">
+        <h2>Organic Cafe</h2>
+        <p>自家製焙煎コーヒーが買えるお店</p>
+      </div>
+        <img id="main-img "src="images/main-image.jpg" alt="コーヒー淹れてる写真">
+    </section>
+  </article>
+</main>
+</body>
+</html>
+
