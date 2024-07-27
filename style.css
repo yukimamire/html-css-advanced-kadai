@@ -83,7 +83,7 @@ z-index: 100;
 }
 
 #nav-sp ul  {
-padding: 0;
+padding-left:0
 }
 
 #nav-sp li {
@@ -122,7 +122,7 @@ text-decoration: underline;
 color: #ffffff;
 }
 
-#logo-sp .menu {
+#nav-sp .menu {
 text-decoration: none;
 display: block;
 margin: 0 20px;
