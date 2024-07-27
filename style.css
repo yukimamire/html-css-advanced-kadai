@@ -14,23 +14,49 @@
 
   /* PCのナビゲーションを非表示に */
   #menu-sp{
-   display: none;
-    }
-
-   header {
-   display: flex;
-   justify-content: space-between;
+    display: none;
      }
-    
-  #nav-sp{
+
+  header {
+    display: flex;
+    justify-content: space-between;
+      }
+
+  #nav-sp {
    display: none;
     }
-  
-    }
+    
+  #nav-pc ul {
+   display: flex;
+   align-items: center;
+   gap: 40px;
+   list-style: none;
+    padding: 0;
+   }
+   
+   #nav-pc a {
+    margin-right: 20px;
+    text-decoration: none;
+   }
+   #nav-pc > a:link {
+    color: #0d0d0d;
+  }
+  #nav-pc > a:visited {
+    color: #0d0d0d;
+  }
+  #nav-pc a:hover {
+    color: #0d0d0d;
+   text-decoration: underline;
+      }
+   #nav-pc > a:active {
+    color: #0d0d0d;
+      }
+   }
+
 
 
 /* スマホ用スタイル */
-  @media screen and (max-width: 767px) {
+ @media screen and (max-width: 767px) {
 
  #nav-pc {
   display: none;
@@ -56,22 +82,21 @@ display: none;
 z-index: 100;
 }
 
-#nav-sp ul {
-display: block;
+#nav-sp ul  {
 padding: 0;
-
-#nav-sp ul {
-padding-left: 0 
 }
 
 #nav-sp li {
 list-style: none;
-
 }
+
+
 #close {
 position: absolute;
 top: 20px;
 right: 20px;
+background-color: transparent;
+border: none;
 
 }
 #logo-sp {
@@ -80,6 +105,7 @@ margin: 80px 0 30px 20px;
 
 #nav-sp a {
 display: block;
+
 }
 #nav-sp a:link {
 color: #ffffff;
@@ -108,4 +134,5 @@ background-position: right top;
 
 }
 }
-  }
+
+  
